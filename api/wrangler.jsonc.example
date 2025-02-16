@@ -1,0 +1,15 @@
+{
+  "name": "api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-02-16",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "automa_database",
+      "database_id": "DATABASE_ID"
+    }
+  ]
+}
