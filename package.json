@@ -1,0 +1,15 @@
+{
+  "name": "automa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "initialize": "./scripts/initialize.sh",
+		"migration::apply": "./scripts/migration-apply.sh --local=false",
+		"migration::local::apply": "./scripts/migration-apply.sh",
+		"migration::create": "./scripts/migration-create.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

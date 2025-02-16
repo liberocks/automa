@@ -1,5 +1,10 @@
 #!/bin/bash
 
+root_dir=$(pwd)
+api_dir=$root_dir/api
+
+cd $api_dir
+
 db_name=""
 if [ -f .env ]; then
     db_name=$(grep "DB_NAME=" .env | cut -d '=' -f2)
@@ -37,4 +42,4 @@ else
     wrangler d1 migrations apply $db_name --remote
 fi
 
- 
+cd $root_dir
