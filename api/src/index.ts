@@ -1,9 +1,8 @@
 import { Hono } from "hono";
 
-import rootRoutes from "./handlers/root";
-
 const app = new Hono<{ Bindings: CloudflareBindings }>();
 
-app.route("/", rootRoutes);
+app.route("/", (await import("./handlers/root")).default);
+app.route("/auth", (await import("./handlers/auth")).default);
 
 export default app;
