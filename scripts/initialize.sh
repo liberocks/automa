@@ -4,9 +4,9 @@ root_dir=$(pwd)
 api_dir=$root_dir/api
 frontend_dir=$root_dir/app
 
-app_name="automa"
 timestamp=$(date +%s)
 db_name="automa_database_$timestamp"
+app_name="automa_app_$timestamp"
 
 cd $api_dir
 
